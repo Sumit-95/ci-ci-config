@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout SCM') {
             steps {
-                git url: 'https://github.com/Sumit-95/ci-ci-config.git'    
+                git branch: 'main', url: 'https://github.com/Sumit-95/ci-ci-config.git'    
             }
         }
         stage('Excecute Script') {
