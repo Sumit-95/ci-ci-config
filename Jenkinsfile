@@ -11,7 +11,7 @@ pipeline {
             steps {
                 echo 'Exceuting script'
                 sh 'ls -la'
-                sh './ci-ci-config/insert_into_yaml.py ${Name}'
+                sh 'python3 insert_into_yaml.py ${Name}'
             }
         }
     }
